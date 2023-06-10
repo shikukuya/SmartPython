@@ -30,6 +30,6 @@ jobs:
       - name: 推送
         uses: actions-js/push@master
         with:
-          github_token: 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
+          github_token: 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
           message: "Actions: 更新map.md"
           branch: master
