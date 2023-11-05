@@ -9,7 +9,7 @@ videos: Dict[str, str] = {}  # example: { "050": "BVxxx" }
 pn = 1
 while True:
     resp = get(
-        "https://api.bilibili.com/x/space/arc/search",
+        "https://api.bilibili.com/x/space/wbi/arc/search",
         params={
             "mid": "480804525",  # uid
             "ps": 50,  # 每页数量
