@@ -7,18 +7,23 @@ def resolve_template(template: str):
         for idx, seg in enumerate(line.split()):
             if seg == "g":
                 matrix_lines = int(line_input[0])
-                matrix = [
-                    list(map(float, input().split())) for _ in range(matrix_lines)
-                ]
+                matrix = [list(map(int, input().split())) for _ in range(matrix_lines)]
                 result.append(matrix)
             elif seg == "n":
-                number = float(line_input[idx])
+                number = int(line_input[idx])
                 result.append(number)
             elif seg == "a":
-                array = list(map(float, line_input))
+                array = list(map(int, line_input))
                 result.append(array)
 
     return result
+
+
+r = resolve_template(
+    """
+
+""".strip()
+)
 
 
 template = """
